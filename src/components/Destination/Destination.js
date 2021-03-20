@@ -2,11 +2,11 @@ import React, { useState } from 'react';
 import { useParams } from 'react-router';
 import Header from '../Header/Header';
 import fakedata from '../../fakedata/fakedata.json';
-import map from '../../images/Map.png';
 import { Container } from 'react-bootstrap';
 import './Destination.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faUsers } from '@fortawesome/free-solid-svg-icons';
+import GMap from '../GoogleMap/GMap';
 
 const Destination = () => {
     const [showResult, setShowResult] = useState(false);
@@ -85,7 +85,7 @@ const Destination = () => {
                     </div>
                 </div>
                 <div className="map">
-                    <img src={map} alt=""/>
+                    <GMap />
                 </div>
             </div>
         </Container>

@@ -4,10 +4,7 @@
         grid-template-columns: repeat(2, 1fr);
         border-top: 1px solid lightgrey;
     }
-    .map img{
-        width: 600px !important;
-        margin-top: 5px;
-    }
+    
     .search-field{
         background-color: lightgray;
         width: 350px;
@@ -16,11 +13,6 @@
         padding: 20px;
     }
   }
-.map img{
-    width: 450px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
 .search-field{
     background-color: lightgray;
     width: 450px;
