@@ -1,0 +1,20 @@
+@media only screen and (min-width: 600px) {
+    .header{
+        margin-left: 480px;
+    }
+  }
+
+  .logo{
+      font-weight: bold;
+  }
+
+.header{
+    font-weight: 600;
+}
+.login-button{
+    margin-left: 15px;
+}
+.user-name{
+    width: 100px;
+    margin-top: 8px;
+}

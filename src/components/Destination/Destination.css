@@ -1,0 +1,80 @@
+@media only screen and (min-width: 600px) {
+    .destination-container{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        border-top: 1px solid lightgrey;
+    }
+    .map img{
+        width: 600px !important;
+        margin-top: 5px;
+    }
+    .search-field{
+        background-color: lightgray;
+        width: 350px;
+        border-radius: 5px;
+        margin-top: 10px;
+        padding: 20px;
+    }
+  }
+.map img{
+    width: 450px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.search-field{
+    background-color: lightgray;
+    width: 450px;
+    border-radius: 5px;
+    margin-top: 10px;
+    padding: 20px;
+}
+.search-field input {
+    width: 100%;
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+    background-color: white;
+}
+.search-field span{
+    font-weight: 500;
+}
+.search-field input[type=submit]{
+    background-color: tomato;
+    color: white;
+    font-weight: 600;
+}
+.result-field{
+    background-color: lightgray;
+    width: 450px;
+    border-radius: 5px;
+    margin-top: 10px;
+    padding: 20px;
+}
+.location-result{
+    background-color: tomato;
+    padding: 10px;
+    border-radius: 5px;
+    color: white;
+}
+.vehicle-results img{
+    width: 60px;
+    margin-right: 20px;
+}
+.vehicle-results{
+    margin-top: 10px;
+}
+.vehicle-result {
+    background-color: white;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    display: flex;
+}
+.vehicle-result h5{
+    margin-right: 50px;
+    margin-left: 50px;
+}
+.capacity{
+    margin-right: 60px;
+    margin-left: 20px;
+}

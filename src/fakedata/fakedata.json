@@ -1,0 +1,21 @@
+[{
+    "name": "Bike",
+    "capacity": "2",
+    "ticket": 50,
+    "img": "https://i.ibb.co/KsdNXhm/Electric-Motorcycle-Energica-Ego-Bike-Png.png"
+  }, {
+    "name": "Car",
+    "capacity": "4",
+    "ticket": 70,
+    "img": "https://i.ibb.co/71g4WSq/car-png-images-1.png"
+  },{
+    "name": "Bus",
+    "capacity": "20",
+    "ticket": 60,
+    "img": "https://i.ibb.co/WpnCfg1/unnamed.png"
+  }, {
+    "name": "Train",
+    "capacity": "40",
+    "ticket": 40,
+    "img": "https://i.ibb.co/p2vc1nj/trian-PNG16620.png"
+  }]

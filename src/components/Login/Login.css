@@ -1,0 +1,45 @@
+.form-field{
+    text-align: center;
+    background-color: lightgray;
+    width: 500px;
+    margin: auto;
+    border-radius: 5px;
+    border: 1px solid lightskyblue;
+    margin-top: 20px;
+}
+form input{
+    width: 80%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 5px;
+}
+form input:first-child{
+    margin-top: 20px;
+}
+.button{
+    background-color: tomato;
+}
+.others-sign-in{
+    text-align: center;
+    margin-top: 20px;
+    width: 500px;
+    margin: auto;
+
+}
+.signIn-button{
+    background-color: white;
+    border-radius: 20px;
+    border: 1px solid lightgrey;
+    width: 80%;
+    margin-bottom: 10px;
+    padding: 5px;
+}
+.signIn-button img{
+    width: 30px;
+    margin-right: 100px;
+}
+.signIn-button p{
+    display: inline;
+    margin-right: 80px;
+}
