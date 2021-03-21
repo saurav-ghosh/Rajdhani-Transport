@@ -70,14 +70,12 @@ const Login = () => {
     const handleEmailPasswordAccount = (e) => {
         if( newUser && loggedInUser.email && loggedInUser.password){
             firebase.auth().createUserWithEmailAndPassword(loggedInUser.email, loggedInUser.password)
-                .then((userCredential) => {
-                    var user = userCredential.user;
+                .then((res) => {
                     const newUserInfo = {...user};
                     newUserInfo.success = 'user created successfully';
                     updateUserName(newUserInfo.name);
                     setUser(newUserInfo);
                     setLoggedInUser(newUserInfo);
-                    console.log(user);
                     history.replace(from);
                 })
                 .catch((error) => {
@@ -91,13 +89,11 @@ const Login = () => {
 
         if(!newUser && loggedInUser.email && loggedInUser.password){
             firebase.auth().signInWithEmailAndPassword(loggedInUser.email, loggedInUser.password)
-            .then((userCredential) => {
-                var user = userCredential.user;
+            .then((res) => {
                 const newUserInfo = {...user};
                 newUserInfo.success = 'user logged in successfully';
                 setUser(newUserInfo);
                 setLoggedInUser(newUserInfo);
-                console.log(user);
                 history.replace(from);
             })
             .catch((error) => {
@@ -116,7 +112,7 @@ const Login = () => {
         user.updateProfile({
         displayName: name 
         }).then(function(res) {
-        console.log('user name updated', res);
+            //successfully updated
         }).catch(function(error) {
         console.log('error');
         });

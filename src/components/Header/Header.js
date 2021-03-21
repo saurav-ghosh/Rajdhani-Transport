@@ -19,7 +19,10 @@ const Header = () => {
                 <Nav.Link as={Link} to="/destination">Destination</Nav.Link>
                 <Nav.Link as={Link} to="/blog">Blog</Nav.Link>
                 <Nav.Link as={Link} to="/contact">Contact</Nav.Link>
-                {loggedInUser.name ? <span className="user-name">{loggedInUser.name}</span> : <Button as={Link} to="/login" className="login-button" variant="danger">login</Button>}
+                {loggedInUser.email 
+                    ? <span className="user-name">{loggedInUser.email}</span>
+                    : <Button as={Link} to="/login" className="login-button" variant="danger">login</Button>
+                }
                 </Nav>
             </Navbar.Collapse>
             </Navbar>
