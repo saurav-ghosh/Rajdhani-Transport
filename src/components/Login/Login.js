@@ -128,9 +128,9 @@ const Login = () => {
             <>
                 <form className="form-field" onSubmit={handleEmailPasswordAccount}>
                     {newUser ? <h2>Create an account</h2> : <h2>Login</h2>}
-                    { newUser && <input type="text" onBlur={handleBlur} name="name" id="" placeholder="Enter your name"/>}<br/>
-                    <input type="text" onBlur={handleBlur} name="email" id="" placeholder="Enter your email"/><br/>
-                    <input type="password" onBlur={handleBlur} name="password" id="" placeholder="Enter your password"/><br/>
+                    { newUser && <input type="text" onBlur={handleBlur} name="name" id="" placeholder="Enter your name" required/>}<br/>
+                    <input type="text" onBlur={handleBlur} name="email" id="" placeholder="Enter your email" required/><br/>
+                    <input type="password" onBlur={handleBlur} name="password" id="" placeholder="Enter your password" required/><br/>
                     <p style={{color: 'green'}}>{user.success}</p>
                     <p style={{color: 'red'}}>{user.error}</p>
                     <input type="submit" className="button" value={newUser ? "Create an account" : "Login"}/>
