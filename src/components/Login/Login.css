@@ -5,7 +5,12 @@
     margin: auto;
     border-radius: 5px;
     border: 1px solid lightskyblue;
-    margin-top: 20px;
+    margin-top: 80px;
+    padding: 20px;
+
+}
+.form-field h2{
+    margin-bottom: 20px;
 }
 form input{
     width: 80%;
@@ -42,4 +47,10 @@ form input:first-child{
 .signIn-button p{
     display: inline;
     margin-right: 80px;
+}
+.signInUp-btn{
+    border: none;
+    background-color: lightgray;
+    text-decoration: underline;
+    color: tomato;
 }
